@@ -1,0 +1,22 @@
+!<CloudApp>
+appsettings:
+  name: logiscripts
+  sourcecoderepobase: https://github.com/thevictorgreen/
+  dockerhubuser: vdigital/
+  provider: digitalocean
+  lifecycle: committed
+microservices:
+- s_id: '0'
+  name: logiscripts-userportal
+  description: Application frontend for the Logiscripts user portal
+  tier: frontend
+  stack: angular4
+  jumpstart: 'yes'
+  sourcerepo: devopsify-angular-simpliq
+  initcodebase: https://codeload.github.com/thevictorgreen/devopsify-angular-simpliq/zip/master
+  status: committed
+  repourl: https://github.com/thevictorgreen/logiscripts-userportal.git
+seedsettings:
+  name: logiscripts-seed
+  status: committed
+  repourl: https://github.com/thevictorgreen/logiscripts-seed.git
