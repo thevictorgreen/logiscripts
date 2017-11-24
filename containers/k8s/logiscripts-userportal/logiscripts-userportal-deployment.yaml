@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: logiscripts-userportal
-          image: vdigital/logiscripts-userportal
+          image: vdigital/logiscripts-userportal:fb4ebd2
           ports:
             - name: logi-userp-port
               containerPort: 80
